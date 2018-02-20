@@ -4,8 +4,8 @@ import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
 import { Router, hashHistory } from 'react-router';
 import store from './store';
-import { getCountries } from './actions/actions-countries';
 import routes from './routes';
+import './country.css';
 import DevTools from './store/DevTools';
 
 ReactDOM.render(
@@ -18,5 +18,3 @@ ReactDOM.render(
     document.getElementById('root')
 );
 registerServiceWorker();
-
-store.dispatch(getCountries());
